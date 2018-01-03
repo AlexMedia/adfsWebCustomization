@@ -607,7 +607,7 @@ function ShowUsernamePage(badUsernamePassword) {
     var idBanner = document.getElementById('identityBanner');
     var idBannerImage = document.getElementById('identityBannerImage');
 
-    var thingsToHide = [passArea, submitButton, backButton, idBannerImage, idBanner];
+    var thingsToHide = [passArea, kmsiArea, submitButton, backButton, idBannerImage, idBanner];
     var thingsToShow = [nextButton, username];
 
     // Show/Hide elements 
@@ -657,7 +657,7 @@ function ShowPasswordPage() {
     var backButton = document.getElementById('backButton');
 
     var thingsToHide = [errorDisplay, nextButton, username];
-    var thingsToShow = [submitButton, passArea, backButton, idBanner, idBannerImage];
+    var thingsToShow = [submitButton, passArea, kmsiArea, backButton, idBanner, idBannerImage];
 
     // Show/Hide elements 
     AdjustElementDisplay(thingsToHide, 'none');
@@ -729,6 +729,7 @@ var passwordInput = document.getElementById('passwordInput');
 if (usernameInput && passwordInput) {
     var username = document.getElementById('userNameArea');
     var passArea = document.getElementById('passwordArea');
+    var kmsiArea = document.getElementById('kmsiArea');
 
     var submitButton = document.getElementById('submitButton');
     var submissionArea = document.getElementById('submissionArea');
